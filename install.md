@@ -1,11 +1,11 @@
-`Installation de l'environnement pour la formation Spring Boot`
+# Installation de l'environnement pour la formation Spring Boot
 
-``Ajout Maven et JDK10``
+## Ajout Maven et JDK10
 
 * Créer un dossier "tools" où vous le souhaitez dans votre architecture
 * Copier le contenu de la clef USB fournie dans ce dossier
 
-`` Windows ``
+### Windows
 
 Ajout de JAVA_HOME au Path : 
 * Ouvrir le gestionnaire de variable d'environnements 
@@ -19,7 +19,7 @@ Ajout de JAVA_HOME au Path :
 
 De la même façon, créer une variable MAVEN_HOME.
 
-``OSX et Ubuntu``
+### OSX et Ubuntu
 
 Ajout de JAVA_HOME au Path : 
 * Aller à votre home : cd ~ (alt + "n" sur OSX)
@@ -32,7 +32,7 @@ Ajout de JAVA_HOME au Path :
 
 De la même façon, créer une variable MAVEN_HOME.
 
-``Intellij Idea``
+### Intellij Idea
 
 Créer un nouveau projet Java
 
