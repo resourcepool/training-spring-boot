@@ -25,7 +25,7 @@ Ajout de JAVA_HOME au Path :
 * Aller à votre home : cd ~ (alt + "n" sur OSX)
 * Ouvrir le fichier ".bashrc" avec un éditeur de texte
 * Ajouter "export JAVA_HOME='chemin vers votre dossier jdk10'"
-* Ajouter "export PATH=$JAVA_HOME:$PATH"
+* Ajouter "export PATH=$JAVA_HOME/bin:$PATH"
 * Sauvegarder et fermer l'éditeur
 * Ouvrir un nouveau terminal
 
