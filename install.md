@@ -44,7 +44,7 @@ Créer un nouveau projet Java
         * Sélectionner "JDK"
         * Rechercher le dossier "jdk10" dans votre architecture
 
-* Après la création du proje, si l'IDE ne trouve pas le Maven ajouté précédemment : 
+* Après la création du projet, si l'IDE ne trouve pas le Maven ajouté précédemment : 
     * Ouvrir les Settings
         * Dans "Intellij IDEA > Preferences" ou "Command + ," sur OSX 
         * Dans "File > Settings" ou "Ctrl + Shift + S" sur Ubuntu et Windows
