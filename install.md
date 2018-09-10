@@ -36,11 +36,13 @@ De la même façon, créer une variable MAVEN_HOME.
 
 Créer un nouveau projet Java
 
-* Si l'IDE ne propose pas le JDK ajouté précédemment :
+* À la création d'un projet Java, si l'IDE ne propose pas le JDK ajouté précédemment :
     * Cliquer sur "New"
     * Rechercher le dossier "jdk10" dans votre architecture
 
-* Si l'IDE ne trouve pas le Maven ajouté précédemment : 
+
+
+* Après la création du proje, si l'IDE ne trouve pas le Maven ajouté précédemment : 
     * Ouvrir les Settings
         * "Command + ," sur OSX 
         *  "Ctrl + Shift + S" sur Ubuntu et Windows
