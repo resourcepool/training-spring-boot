@@ -21,16 +21,37 @@ De la même façon, créer une variable MAVEN_HOME.
 
 ### OSX et Ubuntu
 
-Ajout de JAVA_HOME au Path : 
-* Aller à votre home : cd ~ (alt + "n" sur OSX)
-* Ouvrir le fichier ".bashrc" avec un éditeur de texte
-* Ajouter "export JAVA_HOME='chemin vers votre dossier jdk10'"
-* Ajouter "export PATH=$JAVA_HOME/bin:$PATH"
-* Sauvegarder et fermer l'éditeur
-* Ouvrir un nouveau terminal
+#### Installer le JDK
 
+* Télécharger le jdk 11.0.2 (build 11.0.2+9) pour Linux : https://jdk.java.net/archive/
+* Créer et se placer dans le dossier qui va contenir le jdk : 
+> sudo mkdir /usr/lib/jvm
 
-De la même façon, créer une variable MAVEN_HOME.
+> cd /usr/lib/jvm
+
+* Extraire le jdk : 
+> sudo tar -xvzf [Chemin vers le dossier de téléchargement]/openjdk-11.0.2_linux-x64_bin.tar.gz
+* Ouvrir et éditer le fichier .bashrc : 
+> gedit ~/.bashrc
+* Ajouter la ligne : export JAVA_HOME=/usr/lib/jvm/jdk-11.0.2
+* Ajouter la variable JAVA_HOME au PATH (laisser les éventuelles précédentes variables, ajouter simplement JAVA_HOME et séparer par ":" )
+export PATH=[précedentes variables d'environnement]:$JAVA_HOME/bin:$PATH
+* Fermer et ré ouvrir le terminal et vérifier le succès de l'installation et la version de java :
+> java --version
+#### Installer Maven
+
+* Télécharger le repo : https://maven.apache.org/download.cgi
+* Ouvrir le terminal et se placer dans le dossier /opt :
+> cd /opt
+* Extraire apache-maven dans le dossier /opt :
+> sudo tar -xvzf [Chemin vers le dossier de téléchargement]/apache-maven-3.6.2-bin.tar.gz
+* Editer le fichier .bashrc :
+> gedit ~/.bashrc
+* Ajouter les lignes :
+export M2_HOME=/opt/apache-maven-3.6.2
+export PATH=[précedentes variables d'environnement]:$JAVA_HOME/bin:$M2_HOME/bin:$PATH
+* Fermer et ré ouvrir le terminal et vérifier le succès de l'installation et la version de maven :
+> mvn --version
 
 ### Intellij Idea
 
