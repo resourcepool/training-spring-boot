@@ -7,4 +7,6 @@
 
 3. Exécuter votre DB mysql. Si vous avez docker, vous pouvez utiliser la commande suivante: `docker run --name mariadb --rm -e MYSQL_ROOT_PASSWORD=toor -e MYSQL_DATABASE=defaultdb -p 3306:3306 mariadb`
 
-4. Pour l'exemple donné, vous pouvez utiliser le fichier d'initialisation INIT.sql
+4. Tous les scripts sql contenus dans le dossier initdb seront exécutés automatiquement lors du premier chargement de la DB.
+
+
