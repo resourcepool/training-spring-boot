@@ -63,9 +63,18 @@ Ce guide est fait pour l'enseignant
  * Ajouter le driver JDBC
  * Lancer le container
  * Le connecter à IntelliJ
- * 
+ * Remplacer l'ancien DAO par un DAO avec JDBC + mapping
+ * Voir que cela marche
  
 ### Hibernate 
  * Ajouter hibernate (mvn dependency + spring data JPA)
  * Constater que le chargement ne fonctionne plus
- * 
+ * Ajouter les paramètres manquant dans application.properties  
+```
+spring.datasource.url=jdbc:mariadb://localhost/defaultdb
+spring.datasource.username=root
+spring.datasource.password=toor
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+```
+ * Migrer vers Spring Data JPA
+
