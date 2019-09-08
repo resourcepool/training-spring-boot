@@ -7,6 +7,7 @@ Ce guide est fait pour l'enseignant
 
  * Aller sur [https://start.spring.io/](https://start.spring.io/) et faire un projet avec Spring Boot, Spring MVC, et Spring Data JPA, en Kotlin
  * Lancer le projet avec Intellij, supprimer la classe Application et renommer le package kotlin en java
+ * Leur faire faire cette partie de suite (DL assets)
  * Présenter rapidement maven et commenter les dépendances spring web, spring data et thymeleaf pour plus tard
  * Créer une classe App avec un main et un Hello World
  
@@ -55,3 +56,16 @@ Ce guide est fait pour l'enseignant
  * Ajouter la partie thymeleaf `<form action="#" th:action="@{/new}" th:object="${user}" method="post">` et `th:field="*{firstName}"` sur chaque input
  * Ajouter la méthode `public RedirectView createNewUser(@ModelAttribute User user, RedirectAttributes attrs)`
  * Utiliser un flash attribute
+
+## La DB
+
+### Simple JDBC
+ * Ajouter le driver JDBC
+ * Lancer le container
+ * Le connecter à IntelliJ
+ * 
+ 
+### Hibernate 
+ * Ajouter hibernate (mvn dependency + spring data JPA)
+ * Constater que le chargement ne fonctionne plus
+ * 
