@@ -1,16 +1,23 @@
 # Installation de l'environnement pour la formation Spring Boot
 ## Ubuntu
 
+Cette procédure d'installation nécessite le téléchargement de : 
+ * JDK 11.0.2
+ * Maven 3.6.2
+ * Intellij IDEA Toolbox App
+ * script-db-linux.sh présent dans ce repository
+  
+Vous pouvez copier ces fichiers à partir de la clé USB fournie pendant cette formation (copier tous les éléments de la clé).
+
 ### Installer le JDK
 
 * Télécharger le jdk 11.0.2 (build 11.0.2+9) pour Linux : https://jdk.java.net/archive/
 * Créer et se placer dans le dossier qui va contenir le jdk :   
 `sudo mkdir /usr/lib/jvm`   
 `cd /usr/lib/jvm` 
- 
-* Extraire le jdk :     
-`sudo tar -xvzf [Chemin vers le dossier de téléchargement]/openjdk-11.0.2_linux-x64_bin.tar.gz`
 
+* Extraire ici le jdk :     
+`sudo tar -xvzf [Chemin vers le dossier de téléchargement]/openjdk-11.0.2_linux-x64_bin.tar.gz`
 * Ouvrir et éditer le fichier .bashrc : 
 `gedit ~/.bashrc`
 * Ajouter la ligne : `export JAVA_HOME=/usr/lib/jvm/jdk-11.0.2`
@@ -99,3 +106,10 @@
         `docker run hello-world`
         
     * Télécharger l'image de mariadb dont vous aurez besoin plus tard : `docker pull mariadb`
+    
+### Mariadb database 
+
+* Télécharger le script script-db-linux.sh présent à la racine de ce repository
+* Exécuter le script pour créer le container mariadb et la database 'madbamoi' :  
+`chmod +x script-db-linux.sh`   
+`./script-db.sh`
