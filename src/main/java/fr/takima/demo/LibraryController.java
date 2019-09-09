@@ -37,7 +37,7 @@ public class LibraryController {
   @PostMapping("/new")
   public RedirectView createNewUser(@ModelAttribute User user, RedirectAttributes attrs) {
     attrs.addFlashAttribute("message", "Utilisateur ajouté avec succès");
-    userDAO.add(user);
+    userDAO.save(user);
     return new RedirectView("/");
   }
 
