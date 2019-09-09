@@ -24,7 +24,7 @@ Ajout de JAVA_HOME au Path :
 * Sélectionner la variable Path
 * Cliquer sur "Modifier..."
 * Cliquer sur "Nouveau"
-* Ajouter "JAVA_HOME/bin"
+* Ajouter "JAVA_HOME\bin"
 
 ### Installer Maven
 
@@ -48,7 +48,7 @@ Ajout de M2_HOME au Path :
 * Sélectionner la variable Path
 * Cliquer sur "Modifier..."
 * Cliquer sur "Nouveau"
-* Ajouter "M2_HOME/bin"
+* Ajouter "M2_HOME\bin"
 
 ## Intellij IDEA
 
