@@ -12,6 +12,14 @@
 <body style="background-color: darkslategrey; color: floralwhite;">
   <p>Welcome!</p>
   <div class="container">
+    <span th:text="${message}"></span>
+  </div>
+  <div class="container">
+    <div class="btn-group float-right m-3">
+      <a href="/new" class="btn btn-primary">Add</a>
+    </div>
+  </div>
+  <div class="container">
     <table class="table table-striped table-dark">
       <thead class="thead-light">
       <tr>
