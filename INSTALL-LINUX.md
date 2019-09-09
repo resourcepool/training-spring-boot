@@ -106,10 +106,3 @@ Vous pouvez copier ces fichiers à partir de la clé USB fournie pendant cette f
         `docker run hello-world`
         
     * Télécharger l'image de mariadb dont vous aurez besoin plus tard : `docker pull mariadb`
-    
-### Mariadb database 
-
-* Télécharger le script script-db-linux.sh présent à la racine de ce repository
-* Exécuter le script pour créer le container mariadb et la database 'madbamoi' :  
-`chmod +x script-db-linux.sh`   
-`./script-db.sh`
