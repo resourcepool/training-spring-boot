@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+          <label for="firstName">
+            First Name
+          </label>
+          <input type="text" id="firstName" class="form-control" name="firstName" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="lastName">
+            Last Name
+          </label>
+          <input type="text" id="lastName" class="form-control" name="lastName" ngModel>
+        </div>
+        <div class="form-group">
+          <label for="age">
+            Age
+          </label>
+          <input type="text" id="age" class="form-control" name="age" ngModel>
+        </div>
+        <button class="btn btn-primary" type="submit">Ajouter</button>
+      </form>
+    </div>
+  </div>
+</div>
