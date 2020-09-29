@@ -1,5 +1,4 @@
 # Training Spring Boot
-=====
 
 1. Cloner le projet en utilisant la commande `git clone https://github.com/resourcepool/formation-spring-boot`
 
