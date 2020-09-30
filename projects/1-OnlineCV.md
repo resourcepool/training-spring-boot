@@ -26,11 +26,9 @@ In particular, the following features will be implemented:
   * Create / edit / delete all sections of your profile: experience, education, skills, hobbies, etc...
   * Edit all profile meta-data: name, email, profile picture, banner, etc...
   * Add optional Social links to your external profiles : LinkedIn, Github, Twitter, Instagram
-  * Allow to import or export cv-data from / to an external .json file
 
 **Client panel:**
-  * Embrace responsive design for all sections of your CV. Mobile first!
-  * Allow to generate a dynamic printable version of your CV
+  * Display your CV
   * Allow to contact you through a contact-form
 
 You don't need to implement security like login or user account at the moment.
@@ -40,6 +38,7 @@ You don't need to implement security like login or user account at the moment.
 # Bonus
 All is done on first day?
 Here are a few features we as a customer would have loved to have available.
+  * Allow to import or export cv-data from / to an external .json file
  * Import data from LinkedIn
  * Implement theme abilities : make someone able to upload a custom theme for his/her CV
  * Implement security (through Oauth: Twitter or Github or LinkedIn)
