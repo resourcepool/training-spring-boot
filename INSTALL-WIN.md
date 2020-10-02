@@ -7,12 +7,12 @@
 Choisir une des deux méthodes d'installation : Téléchargement du JDK ou via clef USB :
 
 Téléchargement du JDK :
-* Télécharger le jdk 11.0.2 (build 11.0.2+9) pour Windows : https://jdk.java.net/archive/
+* Télécharger le jdk 11 pour Windows : https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_windows-x64_bin.zip
 * Créer le dossier qui va contenir le jdk    
 * Extraire le jdk dans le dossier créé    
  
 Depuis la clef USB :
-* Récupérer le jdk au format zip : openjdk-11.0.2_windows-x64_bin.zip
+* Récupérer le jdk au format zip : openjdk-11+28_windows-x64_bin.zip
 * Créer le dossier qui va contenir le jdk    
 * Extraire le jdk dans le dossier créé  
 
@@ -31,12 +31,12 @@ Ajout de JAVA_HOME au Path :
 Choisir une des deux méthodes d'installation : Téléchargement de Maven ou via clef USB :
 
 Téléchargement :
-* Télécharger Maven 3.6.2 avec les binaries au format zip: https://maven.apache.org/download.cgi
+* Télécharger Maven 3.6.3 avec les binaries au format zip: https://maven.apache.org/download.cgi
 * Créer le dossier qui va contenir Maven    
 * Extraire Maven dans le dossier créé     
 
 Depuis la clef USB :
-* Récupérer Maven au format zip : apache-maven-3.6.2-bin.zip
+* Récupérer Maven au format zip : apache-maven-3.6.3-bin.zip
 * Créer le dossier qui va contenir Maven :   
 * Extraire Maven dans le dossier créé:  
 
@@ -44,7 +44,7 @@ Ajout de M2_HOME au Path :
 * Ouvrir le gestionnaire de variable d'environnements
     * rechercher système dans le menu démarrer
     * onglet "Paramètres système avancés" => bouton "Variables d'environnement"
-* Créer une variable M2_HOME pour l'utilisateur courant ayant pour valeur le chemin vers votre dossier "apache-maven-3.6.2"
+* Créer une variable M2_HOME pour l'utilisateur courant ayant pour valeur le chemin vers votre dossier "apache-maven-3.6.3"
 * Sélectionner la variable Path
 * Cliquer sur "Modifier..."
 * Cliquer sur "Nouveau"
@@ -55,12 +55,12 @@ Ajout de M2_HOME au Path :
 Choisir une des deux méthodes d'installation : Téléchargement d'Intellij IDEA Ultimate ou via clef USB :
 
 Télécharger Intellij IDEA Ultimate 
-* Télécharger et extraire la ToolBox : https://www.jetbrains.com/toolbox/app/
+* Télécharger IntelliJ : https://www.jetbrains.com/fr-fr/idea/download/
 * Lancer l'éxecutable et installer Intelliji IDEA Ultimate
 * Récupérer votre licence Education ici : https://jetbrains.com/shop/eform/students
 
 Depuis la clef USB :
-* Récupérer Intellij Idea Ultimate : ideaIU-2019.2.2.exe
+* Récupérer Intellij Idea Ultimate : ideaIU-2020.2.2.exe
 * Exécuter le .exe et suivre les instructions d'installation 
 
 Créer un nouveau projet :
