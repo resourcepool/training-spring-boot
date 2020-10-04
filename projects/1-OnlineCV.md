@@ -3,10 +3,10 @@
 Vous donner de la visibilité sur le web via la création de votre CV en ligne
 
 # Le projet
-Votre but est de créer à la fois une section "publique" et une section "administration" pour votre propre site web.
+Votre but est de créer à la fois une section `publique` et une section `administration` pour votre propre site web.
 Votre CV en ligne a pour objectif de mettre en avant votre savoir-faire technologique et aussi de présenter de manière élégante vos expériences passées pour vous différencier un peu des autres et ainsi augmenter votre présence sur le web.
 
-En particulier, les fonctionnalités suivantes seront requises :
+En particulier, les fonctionnalités suivantes seront **requises** :
 
 **Panneau d'Administration**
   * Créer / éditer / supprimer toutes les sections de votre profil : experience, education, skills, hobbies, etc...
@@ -22,8 +22,8 @@ Vous n'avez pas à implémenter de quelconque sécurité pour le moment (login /
 > Vous êtes libre de créer vos modèles comme vous le souhaitez, mais ils devront au moins contenir : experience, education, skills, projects / hobbies. 
 
 # Bonus
-Vous avez déjà tout terminé ?  
-Voici quelques features qui rendra votre plateforme encore plus attrayante :
+Vous avez **déjà tout terminé ?**  
+Voici quelques features qui rendront votre plateforme encore plus attrayante :
  * Autoriser l'import / export des données de votre CV vers un fichier JSON externe
  * Importer la donnée depuis votre compte LinkedIn
  * Proposer une customisation des couleurs / de la bannière
