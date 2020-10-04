@@ -8,7 +8,7 @@ Ce guide est fait pour l'enseignant
  * Aller sur [https://start.spring.io/](https://start.spring.io/) et faire un projet avec Spring Boot, Spring Web, Thymeleaf, et Spring Data JPA, en Java
  * Lancer le projet avec Intellij, supprimer la classe Application
  * Leur faire faire cette partie de suite (DL assets)
- * Présenter rapidement maven et commenter les dépendances spring web, spring data et thymeleaf pour plus tard
+ * Présenter rapidement maven et **commenter les dépendances** spring web, spring data et thymeleaf pour plus tard
  * Créer une classe App avec un main et un Hello World
  
 ### Afficher des utilisateurs
@@ -30,7 +30,7 @@ Ce guide est fait pour l'enseignant
  
 ### Spring
  * La création d'objets est chiante. Ce serait top de l'automatiser. Spring! (pom.xml)
- * Transformer App en SpringBootApplication, et le bean CLI en CommandLineRunner (attention, on disable le web pour l'instant)
+ * Annoter App en ComponentScan, implémenter le bean CLI en CommandLineRunner (attention, on disable le web pour l'instant)
  `new SpringApplicationBuilder(App.class).web(NONE).run(args);`
  
 ## Le Web
