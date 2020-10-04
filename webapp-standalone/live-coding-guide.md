@@ -15,10 +15,12 @@ Ce guide est fait pour l'enseignant
  * Créer une classe User (firstName, lastName, age), et créer les trucs de base (constructeur etc...)
  * Dans le main, faire une liste de User, en ajouter, et les afficher.
 
+### Afficher des utilisateurs en CLI
+ * Dans le main, créer un petit CLI avec un simple Scanner pour lister les usagers (et le default: Unknown Command)
+
 ### Le CLI
  * Créer une classe CLI, et bouger le code à l'intérieur (dans une méthode run). La DB est passée en argument dans le constructeur
- * Créer un CLI simple avec un Scanner
- * Implémenter le list et le quit (et le default: Unknown Command)
+ * Implémenter le le quit
  * Implémenter la création de user
  
 ### Refactoring 
