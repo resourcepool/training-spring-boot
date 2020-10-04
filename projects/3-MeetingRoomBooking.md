@@ -4,14 +4,14 @@ L'objectif de ce projet est de créer une application de réservation de salles.
 # Le projet 
 Vous devez créer à la fois une section `publique` et une section `administration`.
 N'importe quel utilisateur doit pouvoir réserver une salle pour une durée spécifique à la date et l'heure qu'il veut, ou bien dès que la salle est disponible. 
-Chaque salle de réunion a un dashboard où tout le monde peut voir et réserver la salle (on peut imaginer placer une tablette devant chaque salle ce dashboard).
+Chaque salle de réunion a un dashboard où tout le monde peut voir les disponibilités et réserver la salle (on peut imaginer placer une tablette devant chaque salle avec ce dashboard).
 
 En particulier, les fonctionnalités suivantes seront requises :
 
 **Panneau d'administration:**
   * Créer et éditer un membre: nom, e-mail, date de naissance, id
   * Créer et éditer une salle : nom, photo, capacité (X personnes), équipement (écran, tableau, ...), id
-  * Réserver une salle à une date et heure spécifique avec des contraintes. 
+  * Réserver une salle à une date et heure spécifique avec des contraintes
   * Voir quelles salles sont libres
   * Inviter des membres à la salle de réunion
   * Envoyer des e-mails aux membres invités (avec une carte ICS pouvant être lier à un calendrier)
@@ -32,7 +32,7 @@ Vous devrez implémenter un ensemble de règles de réservation et de contrainte
  - J'ai besoin d'un tableau
  - De préférence le matin
  - Dès que possible / la semaine prochaine / le mois prochain
- - De préférence dans la salle 1 ou 3
+ - De préférence dans la salle 1 / salle 1 ou 3
 
 Certaines contraintes ou combinaisons de contraintes ne seront pas possible, il faudra en informer l'utilisateur et proposer une meilleur solution ou une alternative...
 
