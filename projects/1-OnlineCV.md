@@ -1,6 +1,6 @@
 # Projet CV en ligne
 
-Le but de ce mini-projet est d'utiliser vos nouveaux skills pour créer votre site présentant votre CV en ligne.
+Vous donner de la visibilité sur le web via la création de votre CV en ligne
 
 # Le projet
 Votre but est de créer à la fois une section "publique" et une section "administration" pour votre propre site web.
