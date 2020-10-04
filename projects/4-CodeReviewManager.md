@@ -19,6 +19,7 @@ Vous ne devez pas implémenter de sécurité comme le login ou les comptes utili
 
 # Bonus
 Vous avez déjà **tout terminé** ?
+
 Voici quelques features qui rendront votre plateforme encore plus attrayante :
  * Ajouter un timer en plein écran qui donne le compte à rebours avant la prochaine code review, pour chaque groupe (à afficher sur une télévision) 
  * Ajouter une barre de recherche
