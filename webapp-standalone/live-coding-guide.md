@@ -5,8 +5,8 @@ Ce guide est fait pour l'enseignant
 
 ### Startup
 
- * Aller sur [https://start.spring.io/](https://start.spring.io/) et faire un projet avec Spring Boot, Spring Web, Thymeleaf, et Spring Data JPA, en Kotlin
- * Lancer le projet avec Intellij, supprimer la classe Application et renommer le package kotlin en java
+ * Aller sur [https://start.spring.io/](https://start.spring.io/) et faire un projet avec Spring Boot, Spring Web, Thymeleaf, et Spring Data JPA, en Java
+ * Lancer le projet avec Intellij, supprimer la classe Application
  * Leur faire faire cette partie de suite (DL assets)
  * Présenter rapidement maven et commenter les dépendances spring web, spring data et thymeleaf pour plus tard
  * Créer une classe App avec un main et un Hello World
@@ -20,8 +20,8 @@ Ce guide est fait pour l'enseignant
 
 ### Le CLI
  * Créer une classe CLI, et bouger le code à l'intérieur (dans une méthode run). La DB est passée en argument dans le constructeur
- * Implémenter le le quit
- * Implémenter la création de user
+ * Implémenter le quit
+ * Implémenter la création de user (privilégier `Interger.parseInt(sc.next())` à la méthode `sc.nextInt()` pour la gestion de l'exception)
  
 ### Refactoring 
  * On doit toujours séparer la donnée. Créer une classe UserDAO
