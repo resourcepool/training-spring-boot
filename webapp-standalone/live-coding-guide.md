@@ -48,7 +48,7 @@ Ce guide est fait pour l'enseignant
  * Ajouter un `Model m` dans les arguments de la méthode
  * La rendre jolie avec Boostrap  
 `<body style="background-color: darkslategrey; color: floralwhite;">`  
- * Implémenter le template Thymeleaf
+ * Implémenter le template Thymeleaf (`tlhtml`)
  ```html
  <html xmlns:th="http://www.thymeleaf.org" lang="fr">
     <head>
@@ -57,7 +57,7 @@ Ce guide est fait pour l'enseignant
     </head>
   </html>
   ```
- * Ajouter le tableau dynamique
+ * Ajouter le tableau dynamique (`tltable`)
   ```html
   <table class="table table-striped table-dark">
    <thead class="thead-light">
@@ -71,9 +71,9 @@ Ce guide est fait pour l'enseignant
 
 ### Ajouter un user
  * Ajouter une barre de boutons au dessus à droite du tableau
- * Créer la page new avec un form bootstrap
+ * Créer la page new avec un form bootstrap (`tlform`)
  * Créer la méthode GET dans le controller
- * Ajouter la partie thymeleaf `<form action="#" th:action="@{/new}" th:object="${user}" method="post">` et `th:field="*{firstName}"` sur chaque input
+ * Ajouter la partie thymeleaf `<form action="#" th:action="@{/new}" th:object="${user}" method="post">` et `th:field="*{firstName}"` sur chaque input (`tlfieldtext`)
  * Ajouter la méthode `public RedirectView createNewUser(@ModelAttribute User user, RedirectAttributes attrs)`
  * Utiliser un flash attribute
 
@@ -89,7 +89,7 @@ Ce guide est fait pour l'enseignant
 ### Hibernate 
  * Ajouter hibernate (mvn dependency + spring data JPA)
  * Constater que le chargement ne fonctionne plus
- * Ajouter les paramètres manquant dans application.properties  
+ * Ajouter les paramètres manquant dans application.properties (`propsjpa`) 
 ```
 spring.datasource.url=jdbc:mariadb://localhost/defaultdb
 spring.datasource.username=root
