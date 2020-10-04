@@ -1,9 +1,6 @@
 # Projet CV en ligne
 
 Le but de ce mini-projet est d'utiliser vos nouveaux skills pour créer votre site présentant votre CV en ligne.
-Vous pouvez soit :
-* Faire une app standalone dynamique avec Spring Boot et Thymeleaf
-* Soit faire une API et un client web (en utilisant Angular)
 
 # Le projet
 Votre but est de créer à la fois une section "publique" et une section "administration" pour votre propre site web.
