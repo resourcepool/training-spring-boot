@@ -1,17 +1,21 @@
-# Projects
-This directory contains our sugestions of subjects for your projects. 
+# Les sujets
 
-You are free to code whatever you want as long as you have a database (mariaDB), spring, a front and the same level of complexity than the other subjects.  
+Ce répertoire contient les projets possibles que nous vous proposons.
+Vous êtes libre de développer le projet de votre choix dès l'instant où il a été validé par vos encadrants. Il devra faire l'usage d'une DB (MariaDB), de Spring, et d'un site web (Thymeleaf ou Angular), et proposer le même degré de complexité que les projets qui vous sont présentés.
 
-You can either :
-  * Make a standalone app using Spring boot + Thymeleaf
-  * or, **if you feel confident enough**, a back exposing an API (using Spring Boot) and a front with a Single Page Application (using Angular) 
+# Stack
+  * Soit une application standalone avec Spring Boot et des templates Thymeleaf
+  * Soit, **si vous vous sentez à l'aise uniquement**, un backend Spring Boot qui expose votre API et un front SPA (Single Page Application) utilisant Angular
 
-You will develop your project as a team of 3.
+# Guidelines
+Vous développerez votre projet en équipe de **3 personnes**.
 
-In terms of delivery, these are the requirements:
-  * Clean & commented code
-  * Send us a Github or Gitlab link to your repository (don't make it private)
-  * A small ReadMe with instructions to launch your project and a screenshot of your app
+Voici ce qui est attendu en livrable :
+   * Un code clean et commenté
+   * Un lien Github ou Gitlab vers votre repository (qui doit être public)
+   * Un README.md à la racine de votre repository qui donne toutes les instructions pour lancer et faire tourner votre projet, ainsi qu'un screenshot de votre app
 
-Send your repositories at lcouvreux@takima.fr and amoray@takima.fr
+   
+Vous enverrez le lien du repo à vos encadrants `lcouvreux@takima.fr` et `amoray@takima.fr`
+
+
