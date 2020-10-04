@@ -1,46 +1,48 @@
-Meeting Room Booking
+Réservation de salles de réunion
 ===========
-The goal of this mini-project is to use skills on Spring to make your own online CV website.  
+L'objectif de ce projet est de créer une application de réservation de salles. 
+# Le projet 
+Vous devez créer à la fois une section `publique` et une section `administration`.
+N'importe quel utilisateur doit pouvoir réserver une salle pour une durée spécifique à la date et l'heure qu'il veut, ou bien dès que la salle est disponible. 
+Chaque salle de réunion a un dashboard où tout le monde peut voir et réserver la salle (on peut imaginer placer une tablette devant chaque salle ce dashboard).
 
-# The Project 
-Your goal is to create both a client and an administration panel for a meeting room booking app. 
-Any member should be able to book a room for a specific duration at the date and time of his choice or whenever the room is available.
-Each meeting room has a dedicated dashboard where anyone can view and book (potentially, this dashboard would be displayed on a tablet in front of each room). 
+En particulier, les fonctionnalités suivantes seront requises :
 
-In particular, the following items will be implemented:  
+**Panneau d'administration:**
+  * Créer et éditer un membre: nom, e-mail, date de naissance, id
+  * Créer et éditer une salle : nom, photo, capacité (X personnes), équipement (écran, tableau, ...), id
+  * Réserver une salle à une date et heure spécifique avec des contraintes. 
+  * Voir quelles salles sont libres
+  * Inviter des membres à la salle de réunion
+  * Envoyer des e-mails aux membres invités (avec une carte ICS pouvant être lier à un calendrier)
 
-**Admin panel:**
-  * Create & edit a new member: name, email, birthdate, uuid
-  * Create & edit a new meeting room: name, picture, capacity (X persons), equipment (Screen, whiteboard), uuid
-  * Book a meeting room for a given time at a given date with constraints
-  * See which room is free
-  * Invite members to the meeting room
-  * Send emails to members invited to a meeting (ICS card to link in a calendar)
+**Partie publique:**
+  * Voir le calendrier d'une salle de réunion
+  * Voir les membres d'une réunion
+  * Réserver une salle
 
-**Client panel:**
-  * View specific meeting room calendar
-  * View members of a meeting
-  * Book a meeting room
+Un **membre** peut être éditer. Il a un nom, un email, une date de naissance. Chaque utilisateur a un identifiant unique (uuid). 
 
-A **member** can be edited. It has both a name, an email and a birthdate. Each user also has a unique identifier (uuid).
+Une **salle de réunion** a un nom, une photo, une capacité et un identifiant unique. Elle peut avoir plus d'attributs ;).
 
-A **meeting room** has a name, a picture, a capacity and an unique identifier. It may have more attributes ;)
-You will need to implement a set of business rules and constraints to book a room like:
-  - I need a room for X people
-  - I need it for Y hours and Z minutes
-  - I need a TV to display content
-  - I need a whiteboard
-  - Preferably in the morning
-  - As soon as possible / Next week / next month
-  - Preferably in room 1 / Preferably in room 1 or 3
+Vous devrez implémenter un ensemble de règles de réservation et de contraintes pour réserver une salle comme : 
+ - J'ai besoin d'un salle pour X personnes
+ - J'en ai besoin pour Y heures et Z minutes
+ - J'ai besoin d'une télévision pour afficher mes diapos
+ - J'ai besoin d'un tableau
+ - De préférence le matin
+ - Dès que possible / la semaine prochaine / le mois prochain
+ - De préférence dans la salle 1 ou 3
 
-Some contraints combination may not be possible, so you will need to inform the user and propose a better solution or alternative...
-You don't need to implement security like login or user account at the moment.
+Certaines contraintes ou combinaisons de contraintes ne seront pas possible, il faudra en informer l'utilisateur et proposer une meilleur solution ou une alternative...
+
+Vous n'avez pas à implémenter la sécurité comme la connexion ou le compte utilisateur pour le moment.
 
 # Bonus
-All is done on day 3?
-Here are a few features we as a customer would have loved to have available.
- * Link with Google calendar
- * Add a recommendation engine in case a room is not available according to the provided rules
- * Send notification emails (reminders)
- * Implement backend tests
+Vous avez déjà **tout terminé** ?
+Voici quelques features qui rendront votre plateforme encore plus attrayante :
+
+ * Faire un lien avec Google Calendar
+ * Ajouter un moteur de recommandations dans le cas où une salle n'est pas disponible
+ * Envoyer des rappels de réunion par e-mail 
+ * Implémenter les tests de votre backend. 
