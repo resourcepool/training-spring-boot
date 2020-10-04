@@ -30,8 +30,9 @@ Ce guide est fait pour l'enseignant
  
 ### Spring
  * La création d'objets est chiante. Ce serait top de l'automatiser. Spring! (pom.xml)
- * Annoter App en ComponentScan, implémenter le bean CLI en CommandLineRunner (attention, on disable le web pour l'instant)
- `new SpringApplicationBuilder(App.class).web(NONE).run(args);`
+ * Annoter App en `@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })`
+ * On disable le web pour l'instant : psvm `new SpringApplicationBuilder(App.class).web(NONE).run(args);`
+ * Implémenter le bean CLI en CommandLineRunner
  
 ## Le Web
 
