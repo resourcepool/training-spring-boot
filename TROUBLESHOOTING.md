@@ -14,3 +14,17 @@ Réinstaller Docker
 Si vous êtes sur Windows Home ou Family, Docker utilisera une VM Virtualbox pour faire fonctionner vos containers.
 Du coup, l'adresse de tous les services (càd la DB) ne sera pas `localhost` mais `192.168.99.100`
 
+## Application qui ne démarre pas
+
+Si quand vous lancez votre application Spring Boot, vous avez des messages d'erreur qui ressemblent à cela (quand vous fouillez dans la Stacktrace) :  
+`Caused by: java.net.ConnectException: Connection refused (Connection refused)`
+
+ou
+
+`Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:localhost, port:3306. Connection refused (Connection refused)`
+
+C'est que vous avez un soucis de connexion entre votre application et votre DB.
+
+1. Vérifiez que votre DB est bien lancée et que vous pouvez y accéder via votre client SQL (Intellij IDEA, PhpMyAdmin, Adminer, MySQLWorkbench, etc...)
+2. Vérifiez que le host, le login / password, et le port sont bien indiqués et sont les bons (si vous êtes sur windows ou pas, cela peut changer !!!) dans `src/main/resources/application.properties`
+
