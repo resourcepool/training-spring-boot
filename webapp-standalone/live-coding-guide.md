@@ -5,7 +5,7 @@ Ce guide est fait pour l'enseignant
 
 ### Startup
 
- * Aller sur [https://start.spring.io/](https://start.spring.io/) et faire un projet avec Spring Boot, Spring MVC, et Spring Data JPA, en Kotlin
+ * Aller sur [https://start.spring.io/](https://start.spring.io/) et faire un projet avec Spring Boot, Spring Web, Thymeleaf, et Spring Data JPA, en Kotlin
  * Lancer le projet avec Intellij, supprimer la classe Application et renommer le package kotlin en java
  * Leur faire faire cette partie de suite (DL assets)
  * Présenter rapidement maven et commenter les dépendances spring web, spring data et thymeleaf pour plus tard
