@@ -1,9 +1,10 @@
-# Problèmes rencontrés pendant la formation Spring Boot
+# Troubleshooting
 
+Ici, nous avons consigné la plupart des choses que vous pouvez rencontrer sur votre chemin avant d'avoir un projet qui **run**.
 
-## Docker Quick Strart 
+## Docker
 
-* `Looks like something went wrong in step 'Looking for vboxmanage.exe' ... Press any key to continue...`
+`Looks like something went wrong in step 'Looking for vboxmanage.exe' ... Press any key to continue...`  
 Désinstaller Docker et Virtual Box. Dans l'explorateur de fichier, à la racine de votre utilisateur (C:/utilisateurs/%user%/), supprimer les dossiers .docker et .virtualBox.
 Réinstaller Docker
 
