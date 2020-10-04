@@ -39,14 +39,23 @@ Ce guide est fait pour l'enseignant
 ### Spring Web MVC
  * Si on remplaçait notre CLI par une page web?
  * Supprimer le CLI, créer une classe UserLibraryController
- * Faire un HelloWorld avec getMapping et responsebody
+ * Faire un HelloWorld avec GetMapping et ResponseBody
  * Ajouter le DAO et faire la liste d'utilisateurs (juste en toString())
  * Faire une boucle pour afficher ça de manière jolie (en écrivant de l'HTML dans le controller)
  
 ### Thymeleaf
- * Ajouter Thymeleaf et faire une belle page dynamique (app.props : spring.thymeleaf.cache=false)
+ * Ajouter Thymeleaf et faire une belle page HelloWorld dynamique (app.props : spring.thymeleaf.cache=false)
+ * Ajouter un `Model m` dans les arguments de la méthode
  * La rendre jolie avec Boostrap  
 `<body style="background-color: darkslategrey; color: floralwhite;">`  
+ * Implémenter le template Thymeleaf
+ `<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+    <head>
+      <title>Library</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+  </html>`
+ * Ajouter le tableau dynamique
 `<table class="table table-striped table-dark">`  
  `<thead class="thead-light">`  
  `<th scope="col">`  
