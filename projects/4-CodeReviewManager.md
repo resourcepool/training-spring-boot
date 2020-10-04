@@ -1,19 +1,6 @@
 Code Review Management
 ===================
 The goal of this mini-project is to use your skills on Spring to make a code review management tool.  
-You can either : 
- * Make a standalone app using Spring boot + Thymeleaf
- * Make a back with an API (using Spring Boot) and a front to display your data (using Angular)
-
-# Project Conditions
-You will develop your project as a **team** of 3.  
-
-In terms of delivery, these are the requirements:
-   * Clean & commented code
-   * send us a Github or Gitlab link to your repository (don't make it private) 
-   * A small ReadMe with instructions to launch your project and a screenshot of your app
-
-Send your repositories at lcouvreux@takima.fr and amoray@takima.fr
 
 # The Project      
 Your goal is to create an administration panel to manage a schedule of code reviews.
