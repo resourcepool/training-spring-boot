@@ -4,7 +4,7 @@ L'objectif de ce projet est de créer une outil de gestion des code reviews
 
 # Le projet      
 L'objectif est de créer une application pour gérer et programmer des relectures de code. 
-En particulier, les fonctionnalités suivantes seront requises :
+En particulier, les fonctionnalités suivantes seront **requises** :
   * Créer un nouveau membre : nom, email, date de naissance, groupe
   * Créer un groupe: nom, membres
   * Programmer une code review: nom, description, date / heure, groupe
@@ -13,7 +13,7 @@ Un **membre** peut être éditer et appartient à un groupe. Il a un nom, un ema
 
 Un **groupe** est un ensemble de membres. Il lui faut un nom et a entre 0 et une infinité de membres. Les utilisateurs sont membres d'un groupe au maximum.  
 
-Une **code review** est une réunion de membres d'un groupe. Elle **doit** avoir une date & heure, une description et le groupe qui sera présent.  
+Une **code review** est une réunion de membres d'un groupe. Elle doit avoir une date & heure, une description et le groupe qui sera présent.  
 
 Vous ne devez pas implémenter de sécurité comme le login ou les comptes utilisateurs pour le moment. 
 
