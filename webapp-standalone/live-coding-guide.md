@@ -49,17 +49,25 @@ Ce guide est fait pour l'enseignant
  * La rendre jolie avec Boostrap  
 `<body style="background-color: darkslategrey; color: floralwhite;">`  
  * Implémenter le template Thymeleaf
- `<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+ ```html
+ <html xmlns:th="http://www.thymeleaf.org" lang="fr">
     <head>
       <title>Library</title>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     </head>
-  </html>`
+  </html>
+  ```
  * Ajouter le tableau dynamique
-`<table class="table table-striped table-dark">`  
- `<thead class="thead-light">`  
- `<th scope="col">`  
- `<td scope="row">` (pour chaque première colonne de row))
+  ```html
+  <table class="table table-striped table-dark">
+   <thead class="thead-light">
+    <tr><th scope="col">...</th></tr>
+   </thead> 
+   <tbody>
+    <tr>
+      <td scope="row"> <!--(pour chaque première colonne de row))-->
+      </td>
+  ```
 
 ### Ajouter un user
  * Ajouter une barre de boutons au dessus à droite du tableau
