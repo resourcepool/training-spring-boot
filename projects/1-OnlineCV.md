@@ -1,46 +1,35 @@
-# Online CV project
+# Projet CV en ligne
 
-The goal of this mini-project is to use skills on Spring to make your own online CV website.  
-You can either : 
-* Make a standalone app using Spring boot + Thymeleaf
-* Make a back with an API (using Spring Boot) and a front part to display your data (using Angular)
+Le but de ce mini-projet est d'utiliser vos nouveaux skills pour créer votre site présentant votre CV en ligne.
+Vous pouvez soit :
+* Faire une app standalone dynamique avec Spring Boot et Thymeleaf
+* Soit faire une API et un client web (en utilisant Angular)
 
-# Project Conditions
-You will develop your project as a **team** of 3.  
+# Le projet
+Votre but est de créer à la fois une section "publique" et une section "administration" pour votre propre site web.
+Votre CV en ligne a pour objectif de mettre en avant votre savoir-faire technologique et aussi de présenter de manière élégante vos expériences passées pour vous différencier un peu des autres et ainsi augmenter votre présence sur le web.
 
-In terms of delivery, these are the requirements:
-   * Clean & commented code
-   * send us a Github or Gitlab link to your repository (don't make it private) 
-   * A small ReadMe with instructions to launch your project and a screenshot of your app
+En particulier, les fonctionnalités suivantes seront requises :
 
-Send your repositories at lcouvreux@takima.fr and amoray@takima.fr
+**Panneau d'Administration**
+  * Créer / éditer / supprimer toutes les sections de votre profil : experience, education, skills, hobbies, etc...
+  * Éditer la meta-data de chaque élément de votre profil : nom, email, photo de profil, bannière, etc...
+  * Ajouter des liens vers réseaux sociaux professionnels : LinkedIn, Github, Twitter, Instagram etc...
 
-# The Project      
-Your goal is to create both a client and an administration panel for your own professional website.  
-Your website is there to expose your experience and all the info you might want to show on your CV.  
-It is aimed at facilitating your presence on the web.
+**Partie publique**
+  * Afficher votre CV en une ou plusieurs pages (navigation)
+  * Autoriser à être contacté à travers un formulaire de contact, qui vous enverra un email directement
 
-In particular, the following features will be implemented:  
+Vous n'avez pas à implémenter de quelconque sécurité pour le moment (login / password pour l'administration par exemple).
 
-**Admin panel:**
-  * Create / edit / delete all sections of your profile: experience, education, skills, hobbies, etc...
-  * Edit all profile meta-data: name, email, profile picture, banner, etc...
-  * Add optional Social links to your external profiles : LinkedIn, Github, Twitter, Instagram
-
-**Client panel:**
-  * Display your CV
-  * Allow to contact you through a contact-form
-
-You don't need to implement security like login or user account at the moment.
-
-> You're free to create your models as you wish but it should at least contain : works, education, skills, projects and hobbies. 
+> Vous êtes libre de créer vos modèles comme vous le souhaitez, mais ils devront au moins contenir : experience, education, skills, projects / hobbies. 
 
 # Bonus
-All is done on first day?
-Here are a few features we as a customer would have loved to have available.
-  * Allow to import or export cv-data from / to an external .json file
- * Import data from LinkedIn
- * Implement theme abilities : make someone able to upload a custom theme for his/her CV
- * Implement security (through Oauth: Twitter or Github or LinkedIn)
- * Add a newsletter form and newsletter management in your admin section
- * Make all your sections use Markdown and a nice Markdown editor to format your content
+Vous avez déjà tout terminé ?  
+Voici quelques features qui rendra votre plateforme encore plus attrayante :
+ * Autoriser l'import / export des données de votre CV vers un fichier JSON externe
+ * Importer la donnée depuis votre compte LinkedIn
+ * Proposer une customisation des couleurs / de la bannière
+ * Implémenter la sécurité (utiliser Firebase Auth)
+ * Ajouter un moyen de s'inscrire à une newsletter et implémenter la gestion de la newsletter dans la section admin
+ * Faire en sorte que toutes vos sections utilisent du Markdown et utiliser un éditeur Markdown pour formater votre contenu
