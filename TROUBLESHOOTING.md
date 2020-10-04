@@ -28,3 +28,6 @@ C'est que vous avez un soucis de connexion entre votre application et votre DB.
 1. Vérifiez que votre DB est bien lancée et que vous pouvez y accéder via votre client SQL (Intellij IDEA, PhpMyAdmin, Adminer, MySQLWorkbench, etc...)
 2. Vérifiez que le host, le login / password, et le port sont bien indiqués et sont les bons (si vous êtes sur windows ou pas, cela peut changer !!!) dans `src/main/resources/application.properties`
 
+## Dépendances externes qui ne compilent pas (Spring, ou autre)
+
+Vous pouvez réimporter le projet maven, en cliquant sur l'onglet "Maven" tout à droite de votre écran.
