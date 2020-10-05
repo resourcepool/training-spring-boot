@@ -3,8 +3,9 @@
 Ici, nous avons consigné la plupart des choses que vous pouvez rencontrer sur votre chemin avant d'avoir un projet qui **run**.
 
 ## VT-x/AMD-V hardware acceleration is not available on your system
-Lorsque vous installez VirtualBox, vous pouvez rencontrer cette erreur.  
-Il y a plusieurs choses à vérifier :  
+Installer la **dernière version** (6.X) de VirtualBox
+
+Si cela ne fonctionne toujours pas, vérifier :
  * Qu'il soit activé dans le BIOS (c'est généralement le cas)
  * Que Hyper-V est désactivé dans Windows (dans un invite de commande admin : `dism.exe /Online /Disable-Feature:Microsoft-Hyper-V`
 
