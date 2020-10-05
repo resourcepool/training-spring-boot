@@ -3,7 +3,8 @@
 Ici, nous avons consigné la plupart des choses que vous pouvez rencontrer sur votre chemin avant d'avoir un projet qui **run**.
 
 ## VT-x/AMD-V hardware acceleration is not available on your system
-Lancer dans un powershell admin: `docker-machine create default --virtualbox-no-vtx-check`
+Lancer dans un powershell admin: `docker-machine create default --virtualbox-no-vtx-check`.
+
 Si ça ne marche toujours pas, installer la **dernière version** (6.X) de VirtualBox.
 
 Si cela ne fonctionne toujours pas, vérifier :
