@@ -15,6 +15,9 @@ Si cela ne fonctionne toujours pas, vérifier :
 Désinstaller Docker et Virtual Box. Dans l'explorateur de fichier, à la racine de votre utilisateur (C:/utilisateurs/%user%/), supprimer les dossiers .docker et .virtualBox.
 Réinstaller Docker
 
+`Unable to locate bash.exe `  
+Pointer vers le répertoire d'installation de Git (C:\Program Files (x86)\Git\bin\bash.exe par défaut)
+
 
 ## IP Hote Docker pour Windows 
 
