@@ -22,7 +22,7 @@ Vous pouvez copier ces fichiers à partir de la clé USB fournie pendant cette f
 `gedit ~/.bashrc`
 * Ajouter la ligne : `export JAVA_HOME=/usr/lib/jvm/jdk-11.0.2`
 * Ajouter la variable JAVA_HOME au PATH (laisser les éventuelles précédentes variables, ajouter simplement JAVA_HOME et séparer par ":" )   
-`export PATH=[précedentes variables d'environnement]:$JAVA_HOME/bin:$PATH`
+`export PATH=$JAVA_HOME/bin:$PATH`
 * Fermer et ré ouvrir le terminal et vérifier le succès de l'installation et la version de java :
 `java --version`
 
@@ -37,7 +37,7 @@ Vous pouvez copier ces fichiers à partir de la clé USB fournie pendant cette f
 `gedit ~/.bashrc`
 * Ajouter les lignes :  
 `export M2_HOME=/opt/apache-maven-3.6.2`    
-`export PATH=[précedentes variables d'environnement]:$JAVA_HOME/bin:$M2_HOME/bin:$PATH`
+`export PATH=$M2_HOME/bin:$PATH`
 * Fermer et ré ouvrir le terminal et vérifier le succès de l'installation et la version de maven :
 `mvn --version`
 
