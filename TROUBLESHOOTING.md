@@ -2,6 +2,12 @@
 
 Ici, nous avons consigné la plupart des choses que vous pouvez rencontrer sur votre chemin avant d'avoir un projet qui **run**.
 
+## VT-x/AMD-V hardware acceleration is not available on your system
+Lorsque vous installez VirtualBox, vous pouvez rencontrer cette erreur.  
+Il y a plusieurs choses à vérifier :  
+ * Qu'il soit activé dans le BIOS (c'est généralement le cas)
+ * Que Hyper-V est désactivé dans Windows (dans un invite de commande admin : `dism.exe /Online /Disable-Feature:Microsoft-Hyper-V`
+
 ## Docker
 
 `Looks like something went wrong in step 'Looking for vboxmanage.exe' ... Press any key to continue...`  
