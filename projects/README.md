@@ -16,6 +16,6 @@ Voici ce qui est attendu en livrable :
    * Un README.md à la racine de votre repository qui donne toutes les instructions pour lancer et faire tourner votre projet, ainsi qu'un screenshot de votre app
 
    
-Vous enverrez le lien du repo à vos encadrants `lcouvreux@takima.fr` et `amoray@takima.fr`
+Vous enverrez le lien du repo à vos encadrants `tblandin@takima.fr` et `amoray@takima.fr`
 
 
