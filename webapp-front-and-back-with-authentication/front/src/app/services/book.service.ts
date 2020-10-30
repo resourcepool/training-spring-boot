@@ -23,11 +23,11 @@ export class BookService {
   }
 
   borrowBook(id: number): Observable<Book> {
-    return this.http.post<any>(`${this.url}/books/borrow/${id}`, null).pipe(timeout(10000));
+    return this.http.post<any>(`${this.url}/books/user/borrow/${id}`, null).pipe(timeout(10000));
   }
 
   giveBookBack(id: number): Observable<any> {
-    return this.http.post(`${this.url}/books/give-back/${id}`, null).pipe(timeout(10000));
+    return this.http.post(`${this.url}/books/user/give-back/${id}`, null).pipe(timeout(10000));
   }
 
 }
