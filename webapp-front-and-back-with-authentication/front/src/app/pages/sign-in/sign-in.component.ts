@@ -27,7 +27,7 @@ export class SignInComponent implements OnInit, OnDestroy {
         .subscribe(user => {
           this.authenticated = user && !user.anonymous;
           if (this.authenticated) {
-            this.router.navigate([`/`]);
+            this.router.navigate([`/dashboard`]);
           }
         });
   }

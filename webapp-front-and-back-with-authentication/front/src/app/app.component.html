@@ -1,9 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <img class="logo" src="/assets/logo-epf.svg"/>
-  <a class="navbar-brand" [routerLink]="['/']">User List</a>
-  <a class="navbar-brand" [routerLink]="['/add-user']">Add User</a>
+  <a class="button browse" [routerLink]="['/']">Home</a>
+  <a class="button browse" [routerLink]="['/dashboard']">Dashboard</a>
+  <button class="button warn" *ngIf="authenticated" (click)="logout()">Logout</button>
 </nav>
-
 <router-outlet></router-outlet>
 
 
