@@ -1,38 +1,41 @@
 package io.takima.demo;
 
+import io.takima.demo.security.FirebaseAuthentication;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/books")
 @CrossOrigin
-public class UserController {
+public class BookController {
 
-    private final UserDAO userDAO;
+    private final BookService bookService;
 
-    public UserController(UserDAO userDAO) {
-        this.userDAO = userDAO;
+    @Autowired
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
     }
+
 
     @GetMapping()
-    public List<User> getUsers() {
-        Iterable<User> it = this.userDAO.findAll();
-        List<User> users = new ArrayList<>();
-        it.forEach(e -> users.add(e));
-
-        return users;
+    public Iterable<Book> listBooks() {
+        return this.bookService.listBooks();
     }
 
-    @PostMapping()
-    public User addUser(@RequestBody User user) {
-        return this.userDAO.save(user);
+    @PostMapping("/user/borrow/{id}")
+    public Book borrow(@PathVariable Long id, @AuthenticationPrincipal FirebaseAuthentication user) {
+        return this.bookService.borrow(id, user.getUserId());
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable Long id) {
-        this.userDAO.deleteById(id);
+    @PostMapping("/user/give-back/{id}")
+    public Book giveBack(@PathVariable Long id, @AuthenticationPrincipal FirebaseAuthentication user) {
+        return this.bookService.giveBack(id, user.getUserId());
     }
 
 }

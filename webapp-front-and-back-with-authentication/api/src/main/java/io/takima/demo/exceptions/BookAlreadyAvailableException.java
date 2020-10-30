@@ -1,7 +1,7 @@
 package io.takima.demo.exceptions;
 
-public class BookAlreadyBorrowedException extends IllegalStateException {
-    public BookAlreadyBorrowedException() {
-        super("Cannot borrow a book that has already been borrowed by someone else.");
+public class BookAlreadyAvailableException extends IllegalStateException {
+    public BookAlreadyAvailableException() {
+        super("Cannot give back a book that hasn't been borrowed.");
     }
 }

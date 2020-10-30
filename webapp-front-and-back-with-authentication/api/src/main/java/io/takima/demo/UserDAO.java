@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
  *
  */
 @Repository
-public interface BookDAO extends CrudRepository<Book, Long> {
+public interface UserDAO extends CrudRepository<User, String> {
 
 }

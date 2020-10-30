@@ -5,13 +5,13 @@ import javax.persistence.*
 /**
  *
  */
-@Entity(name = "users")
-data class User(
+@Entity(name = "books")
+data class Book(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Id var id: Long?,
-        @Column(name = "first_name") var firstName: String?,
-        @Column(name = "last_name") var lastName: String?,
-        @Column(name = "age") var age: Int?) {
+        @Column(name = "borrower_id") var borrowerId: String?,
+        @Column(name = "author") var author: String?,
+        @Column(name = "title") var title: String?) {
     constructor() : this(null, null, null, null)
 
 }
