@@ -36,7 +36,9 @@ Télécharger l'image de mariadb dont vous aurez besoin plus tard :
 
 ### Installer Intellij IDEA
 
-Dans le dossier macos, exécuter le fichier `ideaIU-2019.2.2.dmg`
+Dans le dossier macos, exécuter le fichier :
++ Intel : `ideaIU-2021.2.2.dmg` 
++ M1 : `ideaIU-2021.2.2-aarch64.dmg`
 
 Récupérer votre licence Education ici : [https://jetbrains.com/shop/eform/students](https://jetbrains.com/shop/eform/students)  
 
@@ -71,7 +73,6 @@ Télécharger l'image de mariadb dont vous aurez besoin plus tard :
 
 Récupérer votre licence Education ici : [https://jetbrains.com/shop/eform/students](https://jetbrains.com/shop/eform/students)  
 
------
 
 
 ## Troubleshoot

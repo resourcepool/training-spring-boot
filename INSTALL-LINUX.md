@@ -45,7 +45,7 @@ Vous pouvez copier ces fichiers à partir de la clé USB fournie pendant cette f
 
 #### Installation via Toolbox App
 
-* Télécharger et extraire la ToolBox : https://www.jetbrains.com/toolbox/app/
+* Télécharger (ou clé USB) et extraire la ToolBox : https://www.jetbrains.com/toolbox/app/ 
 * Lancer l'éxecutable et installer Intelliji IDEA Ultimate
 * Récupérer votre licence Education ici : https://jetbrains.com/shop/eform/students
 
@@ -106,3 +106,4 @@ Vous pouvez copier ces fichiers à partir de la clé USB fournie pendant cette f
         `docker run hello-world`
         
     * Télécharger l'image de mariadb dont vous aurez besoin plus tard : `docker pull mariadb`
+

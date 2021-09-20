@@ -55,12 +55,12 @@ Ajout de M2_HOME au Path :
 Choisir une des deux méthodes d'installation : Téléchargement d'Intellij IDEA Ultimate ou via clef USB :
 
 Télécharger Intellij IDEA Ultimate 
-* Télécharger IntelliJ : https://www.jetbrains.com/fr-fr/idea/download/
+* Télécharger IntelliJ : https://www.jetbrains.com/fr-fr/idea/download/#section=windows
 * Lancer l'éxecutable et installer Intelliji IDEA Ultimate
 * Récupérer votre licence Education ici : https://jetbrains.com/shop/eform/students
 
 Depuis la clef USB :
-* Récupérer Intellij Idea Ultimate : ideaIU-2020.2.2.exe
+* Récupérer Intellij Idea Ultimate : ideaIU-2021.2.2.exe
 * Exécuter le .exe et suivre les instructions d'installation 
 
 Créer un nouveau projet :
@@ -93,7 +93,7 @@ Depuis la clef USB :
 * Récupérer Docker For Windows : DockerToolbox-19.03.1.exe
 * Exécuter le .exe et suivre les instructions d'installation 
 
-* Choisir 'full installation' et cocher :
+Choisir 'full installation' et cocher :
     * Docker Compose for Windows
     * Virtual Box
     * Kinematic for Windows
@@ -103,5 +103,4 @@ Depuis la clef USB :
 * Exécuter : Docker Quickstart Terminal
 * Une fois l'installation terminée et afin de s'assurer de son succès, saisir `docker run hello-world` dans le terminal de commande
 * Télécharger l'image de mariadb dont vous aurez besoin plus tard : `docker pull mariadb`
-
 
