@@ -86,21 +86,14 @@ Créer un nouveau projet :
 Choisir une des deux méthodes d'installation : Téléchargement de Docker For Windows ou via clef USB :
 
 Téléchargement :
-* Aller sur https://github.com/docker/toolbox/releases
-* Télécharger et exécuter : DockerToolbox-19.03.1.exe
+* Aller sur https://www.docker.com/products/docker-desktop
+* Télécharger et exécuter : DockerDesktop Installer.exe
 
 Depuis la clef USB :
-* Récupérer Docker For Windows : DockerToolbox-19.03.1.exe
+* Récupérer Docker For Windows : DockerDesktop Installer.exe
 * Exécuter le .exe et suivre les instructions d'installation 
 
-Choisir 'full installation' et cocher :
-    * Docker Compose for Windows
-    * Virtual Box
-    * Kinematic for Windows
-* Cocher :
-    * Add Docker Binaries to PATH
-    * Upgrade Boot2Docker VM
-* Exécuter : Docker Quickstart Terminal
+* Exécuter : Docker Desktop
 * Une fois l'installation terminée et afin de s'assurer de son succès, saisir `docker run hello-world` dans le terminal de commande
-* Télécharger l'image de mariadb dont vous aurez besoin plus tard : `docker pull mariadb`
+* Télécharger l'image de mariadb dont vous aurez besoin plus tard : `docker pull mariadb`.
 
