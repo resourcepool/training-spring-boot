@@ -50,16 +50,16 @@ Ce guide est fait pour l'enseignant
  * Faire un petit template rapide en html  
 `<body>`  
  * Implémenter le template Thymeleaf (`tlhtml`)
- ```html
+```html
  <html xmlns:th="http://www.thymeleaf.org" lang="fr">
     <head>
       <title>Library</title>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     </head>
   </html>
-  ```
+```
  * Ajouter le tableau dynamique (`tltable`)
-  ```html
+```html
 <body>
 <h1><strong>Bienvenue sur mon app de ouf</strong></h1>
 <hr class="my-5"/>
@@ -82,9 +82,10 @@ Ce guide est fait pour l'enseignant
     </table>
 </div>
 </body>
-  ```
+```
   * Appliquer la magie avec Bootstrap et un peu de CSS (`tlbootstrap`)
- <html xmlns:th="http://www.thymeleaf.org" lang="fr">
+```html
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
 <head>
     <title>Library</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -133,7 +134,7 @@ Ce guide est fait pour l'enseignant
         crossorigin="anonymous"></script>
 </body>
 </html>
-  ```
+```
 
 ### Ajouter un user
  * Ajouter une barre de boutons au dessus à droite du tableau
