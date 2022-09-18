@@ -101,6 +101,14 @@ Ce guide est fait pour l'enseignant
             font-weight: bold;
             color: #45CFCC;
         }
+        .btn-primary {
+            background-color: #45CFCC !important;
+            border: 1px solid #228e8e;
+        }
+        .btn-primary:hover {
+            background-color: #43E4E1 !important;
+            border: 1px solid #228e8e;
+        }
     </style>
 </head>
 <body>
@@ -137,12 +145,30 @@ Ce guide est fait pour l'enseignant
 ```
 
 ### Ajouter un user
- * Ajouter une barre de boutons au dessus à droite du tableau
+ * Ajouter une barre de boutons au dessus à droite du tableau (`tlbtn`)
+ ```html
+<div class="container d-flex flex-row justify-content-end">
+    <div class="btn-group float-right m-3">
+        <a href="/new" class="btn btn-primary">Add</a>
+    </div>
+</div>
+ ```
  * Créer la page new avec un form bootstrap (`tlform`)
+ ```html
+<form method="post" th:action="@{/new}" th:object="${user}">
+</form>
+ ```
  * Créer la méthode GET dans le controller
- * Ajouter la partie thymeleaf `<form action="#" th:action="@{/new}" th:object="${user}" method="post">` et `th:field="*{firstName}"` sur chaque input (`tlfieldtext`)
+ * Ajouter la partie thymeleaf (`tlinputtext`)
+ ```html
+<div class="form-group">
+      <label for="firstNameInput">First Name</label>
+      <input type="text" th:field="*{firstName}" class="form-control" id="firstNameInput" aria-describedby="firstNameHelp" placeholder="Enter First Name">
+      <small id="firstNameHelp" class="form-text text-muted">Having a First Name is always more convenient.</small>
+</div>
+ ```
  * Ajouter la méthode `public RedirectView createNewUser(@ModelAttribute User user, RedirectAttributes attrs)`
- * Utiliser un flash attribute
+ * Utiliser un flash attribute et afficher un message de succès
 
 ## La DB
 
