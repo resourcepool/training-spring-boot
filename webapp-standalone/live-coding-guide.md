@@ -13,7 +13,6 @@ Ce guide est fait pour l'enseignant
  
 ### Afficher des utilisateurs
  * Créer une classe User (firstName, lastName, age), et créer les trucs de base (constructeur etc...)
- * Montrer qu'on peut aller plus vite avec Record depuis java 17
  * Dans le main, faire une liste de User, en ajouter, et les afficher.
 
 ### Afficher des utilisateurs en CLI
@@ -74,9 +73,9 @@ Ce guide est fait pour l'enseignant
         </thead>
         <tbody>
         <tr th:each="u : ${users}">
-            <td th:text="${u.firstName()}"></td>
-            <td th:text="${u.lastName()}"></td>
-            <td th:text="${u.age()}"></td>
+            <td th:text="${u.firstName}"></td>
+            <td th:text="${u.lastName}"></td>
+            <td th:text="${u.age}"></td>
         </tr>
         </tbody>
     </table>
@@ -130,9 +129,9 @@ Ce guide est fait pour l'enseignant
         </thead>
         <tbody>
         <tr th:each="u : ${users}">
-            <td th:text="${u.firstName()}"></td>
-            <td th:text="${u.lastName()}"></td>
-            <td th:text="${u.age()}"></td>
+            <td th:text="${u.firstName}"></td>
+            <td th:text="${u.lastName}"></td>
+            <td th:text="${u.age}"></td>
         </tr>
         </tbody>
     </table>
