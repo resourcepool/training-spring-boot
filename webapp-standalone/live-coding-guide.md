@@ -13,6 +13,7 @@ Ce guide est fait pour l'enseignant
  
 ### Afficher des utilisateurs
  * Créer une classe User (firstName, lastName, age), et créer les trucs de base (constructeur etc...)
+ * Montrer qu'on peut aller plus vite avec Record depuis java 17
  * Dans le main, faire une liste de User, en ajouter, et les afficher.
 
 ### Afficher des utilisateurs en CLI
@@ -31,7 +32,7 @@ Ce guide est fait pour l'enseignant
 ### Spring
  * La création d'objets est chiante. Ce serait top de l'automatiser. Spring! (pom.xml)
  * Annoter App en `@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })`
- * On disable le web pour l'instant : psvm `new SpringApplicationBuilder(App.class).web(NONE).run(args);`
+ * On disable le web pour l'instant : psvm `new SpringApplicationBuilder(App.class).web(NONE).run(args);` (ou `spnoweb`)
  * Implémenter le bean CLI en CommandLineRunner
  
 ## Le Web
@@ -46,8 +47,8 @@ Ce guide est fait pour l'enseignant
 ### Thymeleaf
  * Ajouter Thymeleaf et faire une belle page HelloWorld dynamique (app.props : spring.thymeleaf.cache=false)
  * Ajouter un `Model m` dans les arguments de la méthode
- * La rendre jolie avec Boostrap  
-`<body style="background-color: darkslategrey; color: floralwhite;">`  
+ * Faire un petit template rapide en html  
+`<body>`  
  * Implémenter le template Thymeleaf (`tlhtml`)
  ```html
  <html xmlns:th="http://www.thymeleaf.org" lang="fr">
@@ -59,14 +60,79 @@ Ce guide est fait pour l'enseignant
   ```
  * Ajouter le tableau dynamique (`tltable`)
   ```html
-  <table class="table table-striped table-dark">
-   <thead class="thead-light">
-    <tr><th scope="col">...</th></tr>
-   </thead> 
-   <tbody>
-    <tr>
-      <td scope="row"> <!--(pour chaque première colonne de row))-->
-      </td>
+<body>
+<h1><strong>Bienvenue sur mon app de ouf</strong></h1>
+<hr class="my-5"/>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="u : ${users}">
+            <td th:text="${u.firstName()}"></td>
+            <td th:text="${u.lastName()}"></td>
+            <td th:text="${u.age()}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+  ```
+  * Appliquer la magie avec Bootstrap et un peu de CSS (`tlbootstrap`)
+ <html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+    <title>Library</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        body {
+            background: #18282c;
+            color: #eee;
+        }
+        th {
+            font-weight: bold;
+            color: #45CFCC;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-5">
+    <section>
+        <h1 class="text-center"><strong>Bienvenue sur mon app de ouf</strong></h1>
+        <hr class="my-5"/>
+    </section>
+</div>
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <table class="table table-dark table-striped table-group-divider">
+        <thead>
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Age</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="u : ${users}">
+            <td th:text="${u.firstName()}"></td>
+            <td th:text="${u.lastName()}"></td>
+            <td th:text="${u.age()}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+</html>
   ```
 
 ### Ajouter un user
