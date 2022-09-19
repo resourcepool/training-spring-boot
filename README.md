@@ -44,8 +44,11 @@ télécharger n'importe quelle version de Java directement depuis ton IDE (non c
 Cerise sur le gateaux grâce à ton compte EPF, tu peux gratuitement obtenir une licence de la version payante (ultimate).
 Elle est essentielle au bon déroulement du TP car avec cette derniere tu pourras notamment visualiser ta base de donnée et intéragire avec elle directement depuis IntelliJ. <br>
 Pour te créer un compte, suis ce lien et effectue les actions détaillées ci-dessous : https://www.jetbrains.com/fr-fr/idea/
-![img.png](img-readme/img.png)
-![img.png](img-readme/img2.png)
+
+<div style="text-align:center">
+<img src="img-readme/img.png" width="500"/>
+<img src="img-readme/img2.png" width="500"/>
+</div>
 
 ### 2. Licence Intellij
 Pour récupérer une licence gratuite utilise ce lien : https://jetbrains.com/shop/eform/students
@@ -58,7 +61,7 @@ Une fois ta licence récupérer, lance l'IDE et relie ton compte
 ### 4. Clonage du projet 
 Pour récupérer le repository GitHub du TP lance `git clone https://github.com/resourcepool/training-spring-boot.git`
 
-Tu y trouveras toutes les ressources nécessaire à la suite du TP.
+Tu y trouveras toutes les ressources nécessaires à la suite du TP.
 
 Dans Intellij, effectue ensuite les actions suivantes : 
 ![img.png](img-readme/img5.png)
