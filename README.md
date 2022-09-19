@@ -86,7 +86,6 @@ Depuis Intellij, tu peux directement télécharger Java 17 : <br>
 </p>
 <br>
 Tu peux également changer de Shell (Surtout utile pour les Windows)
-<br>
 
 <p align="center">
 <img src="img-readme/img12.png" width="500"/>
@@ -94,7 +93,6 @@ Tu peux également changer de Shell (Surtout utile pour les Windows)
 <br>
 
 Sélectionne *Git Bash*
-<br>
 
 <p align="center">
 <img src="img-readme/img13.png" width="500"/>
@@ -109,8 +107,7 @@ Lance le Docker Desktop en cliquant sur l'icône, tu dois obtenir l'écran suiva
 Ferme et ré-ouvre ton application IntelliJ pour que les changements effectués par l'installation de docker soit pris en compte.<br>
 Pour s'assurer que ton install Docker a bien fonctionné lance la commande suivante dans ton terminal :  <br>
 `docker run hello-world` <br>
-Tu dois obtenir ce résultat : 
-<br>
+Tu dois obtenir ce résultat :
 
 <p align="center">
 <img src="img-readme/img15.png" width="600"/>
@@ -171,7 +168,6 @@ Ca ouvre :
 <img src="img-readme/img27.png" width="600"/>
 </p>
 Sélectionne le Java 17 préalablement téléchargé et ajoute l'option `-Xms256m -Xmx256m` (c'est pour éviter que Intellij mange toute ta RAM)
-<br>
 
 <p align="center">
 <img src="img-readme/img28.png" width="600"/>
@@ -179,7 +175,6 @@ Sélectionne le Java 17 préalablement téléchargé et ajoute l'option `-Xms256
 <img src="img-readme/img30.png" width="500"/>
 </p>
 Enfin :
-<br>
 
 <p align="center"><img src="img-readme/img31.png" width="800"/></p>
 
