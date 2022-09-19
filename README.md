@@ -124,5 +124,6 @@ Sélectionne le Java 17 préalablement téléchargé et ajoute l'option `-Xms256
 Enfin : 
 ![img_6.png](img-readme/img31.png)
 Alors ça marche ?
+![img.png](img-readme/img32.png)
 
 
