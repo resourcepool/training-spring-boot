@@ -8,18 +8,18 @@
 - Intellij : https://www.jetbrains.com/fr-fr/idea/download/#section=windows
 
 #### Par clé : 
-- Récupérer le fichier **Windows** et exécuter les .exe
+- Récupère le fichier **Windows** et exécute les .exe
 
 ### Mac 
-Pour les puces M1 ou M2 choisir *Apple Chip* & *(Apple Silicone)*
-Pour les puces Intel choisir *Intel Chip* & *(Intel)*
+Pour les puces M1 ou M2 choisis *Apple Chip* & *(Apple Silicone)*
+Pour les puces Intel choisis *Intel Chip* & *(Intel)*
 
 #### Par téléchargements Internet :
 - Docker  : https://docs.docker.com/desktop/install/mac-install/
 - Intellij : https://www.jetbrains.com/fr-fr/idea/download/#section=mac
 
 #### Par clé : 
-- Récupérer le fichier **Mac** correspondant à la bonne puce et exécuter les .exe
+- Récupère le fichier **Mac** correspondant à la bonne puce et exécute les .exe
 
 ### Linux 
 #### Commandes pour les installations : 
@@ -31,18 +31,18 @@ Pour les puces Intel choisir *Intel Chip* & *(Intel)*
   - `sudo snap install intellij-idea-ultimate --classic`
 
 #### Par clé : 
-- Récupérer les lignes de commandes dans le fichier du dossier Linux
+- Récupère les lignes de commandes dans le fichier du dossier Linux
 
 ## II. SetUp Intellij 
 ### 1. Création compte 
-Intellij est un IDE super complet et est devenu un indispensable pour le dévelopement de projet Java. <br> 
+Intellij est un IDE super complet et est devenu un indispensable pour le développement de projet Java. <br> 
 
-Avec ses recherches de fichiers optimisées, auto-complétions et raccourcis à gogo, Intellij améliore grandement l'expérience de développement. 
-Le Graal étant que maven y est de base intégré et que tu puisses
+Avec ses recherches de fichiers optimisées, ses auto-complétions et ses raccourcis à gogo, Intellij améliore grandement l'expérience de développement. 
+Le Graal étant que Maven y est de base intégré et que tu puisses
 télécharger n'importe quelle version de Java directement depuis ton IDE (non ce n'est pas un rêve !)<br>
 
-Cerise sur le gateaux grâce à ton compte EPF, tu peux gratuitement obtenir une licence de la version payante (ultimate).
-Elle est essentielle au bon déroulement du TP car avec cette derniere tu pourras notamment visualiser ta base de donnée et intéragire avec elle directement depuis IntelliJ. <br>
+Cerise sur le gateau grâce à ton compte EPF, tu peux gratuitement obtenir une licence de la version payante (ultimate).
+Elle est essentielle au bon déroulement du TP car, avec cette dernière, tu pourras notamment visualiser ta base de données et interagir avec elle directement depuis IntelliJ. <br>
 Pour te créer un compte, suis ce lien et effectue les actions détaillées ci-dessous : https://www.jetbrains.com/fr-fr/idea/
 
 <p align="center">
@@ -54,14 +54,14 @@ Pour te créer un compte, suis ce lien et effectue les actions détaillées ci-d
 Pour récupérer une licence gratuite utilise ce lien : https://jetbrains.com/shop/eform/students
 
 ### 3. Lancer Intellij 
-Une fois ta licence récupérer, lance l'IDE et relie ton compte
+Une fois ta licence récupérée, lance l'IDE et relie ton compte
 <p align="center">
 <img src="img-readme/img3.png" width="600"/>
 <img src="img-readme/img4.png" width="600"/>
 </p>
 
 ### 4. Clonage du projet 
-Pour récupérer le repository GitHub du TP lance `git clone https://github.com/resourcepool/training-spring-boot.git`
+Pour récupérer le repository GitHub du TP, lance `git clone https://github.com/resourcepool/training-spring-boot.git`
 
 Tu y trouveras toutes les ressources nécessaires à la suite du TP.
 
@@ -103,8 +103,8 @@ Lance le Docker Desktop en cliquant sur l'icône, tu dois obtenir l'écran suiva
 <p align="center">
 <img src="img-readme/img14.png" width="800"/>
 </p>
-Ferme et ré-ouvre ton application IntelliJ pour que les changements effectués par l'installation de docker soit pris en compte.<br>
-Pour s'assurer que ton install Docker a bien fonctionné lance la commande suivante dans ton terminal :  <br>
+Ferme et ré-ouvre ton application IntelliJ pour que les changements effectués par l'installation de Docker soit pris en compte.<br>
+Pour s'assurer que ton install Docker a bien fonctionné, lance la commande suivante dans ton terminal :  <br>
 `docker run hello-world` <br>
 Tu dois obtenir ce résultat : <br>
 <br>
@@ -112,7 +112,7 @@ Tu dois obtenir ce résultat : <br>
 <img src="img-readme/img15.png" width="600"/>
 </p>
 
-Tu peux alors lancer la base de données MariaDB qui sera utilisé tout au long du TP :<br>
+Tu peux alors lancer la base de données MariaDB qui sera utilisée tout au long du TP :<br>
 `docker run --name mariadb --rm -e MYSQL_ROOT_PASSWORD=toor -e MYSQL_DATABASE=defaultdb -p 3306:3306 mariadb`
 
 ### 2. Afficher la BDD dans Intellij 
@@ -162,7 +162,7 @@ Tadaaaam (j'avoue un peu plus que 2 clics)
 <img src="img-readme/img26.png" width="600"/>
 </p>
 
-Ca ouvre : 
+Ça ouvre : 
 <p align="center">
 <img src="img-readme/img27.png" width="600"/>
 </p>
