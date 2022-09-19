@@ -1,5 +1,4 @@
 # Training Spring Boot
-=====
 
 1. Importe le projet dans IntelliJ IDEA en important le fichier "pom.xml" à la racine de ce répertoire
 
