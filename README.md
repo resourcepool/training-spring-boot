@@ -87,16 +87,18 @@ Depuis Intellij, tu peux directement télécharger Java 17 : <br>
 <br>
 Tu peux également changer de Shell (Surtout utile pour les Windows)
 <br>
+
 <p align="center">
 <img src="img-readme/img12.png" width="500"/>
 </p>
-
-<br>
-Sélectionner *Git Bash*
 <br>
 
+Sélectionne *Git Bash*
+<br>
 
-![img_1.png](img-readme/img13.png)
+<p align="center">
+<img src="img-readme/img13.png" width="500"/>
+</p>
 
 ## III. SetUp de la BDD via Docker
 ### 1. Docker
@@ -108,6 +110,8 @@ Ferme et ré-ouvre ton application IntelliJ pour que les changements effectués 
 Pour s'assurer que ton install Docker a bien fonctionné lance la commande suivante dans ton terminal :  <br>
 `docker run hello-world` <br>
 Tu dois obtenir ce résultat : 
+<br>
+
 <p align="center">
 <img src="img-readme/img15.png" width="600"/>
 </p>
@@ -167,12 +171,15 @@ Ca ouvre :
 <img src="img-readme/img27.png" width="600"/>
 </p>
 Sélectionne le Java 17 préalablement téléchargé et ajoute l'option `-Xms256m -Xmx256m` (c'est pour éviter que Intellij mange toute ta RAM)
+<br>
+
 <p align="center">
 <img src="img-readme/img28.png" width="600"/>
 <img src="img-readme/img29.png" />
 <img src="img-readme/img30.png" width="500"/>
 </p>
 Enfin :
+<br>
 
 <p align="center"><img src="img-readme/img31.png" width="800"/></p>
 
