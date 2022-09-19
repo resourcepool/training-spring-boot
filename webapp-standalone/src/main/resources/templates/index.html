@@ -1,43 +1,68 @@
-<!DOCTYPE html>
-
-<html xmlns:th="http://www.thymeleaf.org">
-
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
 <head>
-  <title>Facebook</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <title>Library</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        body {
+            background: #18282c;
+            color: #eee;
+        }
+        th {
+            font-weight: bold;
+            color: #45CFCC;
+        }
+        .btn-primary {
+            background-color: #45CFCC !important;
+            border: 1px solid #228e8e;
+        }
+        .btn-primary:hover {
+            background-color: #43E4E1 !important;
+            border: 1px solid #228e8e;
+        }
+        .alert-success {
+            width: 100%;
+        }
+    </style>
 </head>
+<body>
 
-<body style="background-color: darkslategrey; color: floralwhite;">
-  <p>Welcome!</p>
-  <div class="container">
-    <span th:text="${message}"></span>
-  </div>
-  <div class="container">
+<div class="container my-5">
+    <section>
+        <h1 class="text-center"><strong>Bienvenue sur mon app de ouf</strong></h1>
+        <hr class="my-5"/>
+    </section>
+</div>
+<div class="container d-flex flex-row justify-content-end">
+    <div role="alert" class="alert alert-success" th:if="${message != null}" th:text="${message}"></div>
     <div class="btn-group float-right m-3">
-      <a href="/new" class="btn btn-primary">Add</a>
+        <a href="/new" class="btn btn-primary">Add</a>
     </div>
-  </div>
-  <div class="container">
-    <table class="table table-striped table-dark">
-      <thead class="thead-light">
-      <tr>
-        <th scope="col">First Name</th>
-        <th scope="col">Last Name</th>
-        <th scope="col">Age</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr th:each="user : ${users}">
-        <td scope="row" th:text="${user.firstName}"></td>
-        <td th:text="${user.lastName}"></td>
-        <td th:text="${user.age}"></td>
-      </tr>
-      </tbody>
+</div>
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    <table class="table table-dark table-striped table-group-divider">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Age</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="u : ${users}">
+            <td th:text="${u.id}"></td>
+            <td th:text="${u.firstName}"></td>
+            <td th:text="${u.lastName}"></td>
+            <td th:text="${u.age}"></td>
+        </tr>
+        </tbody>
     </table>
-  </div>
-
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>
