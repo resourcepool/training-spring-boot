@@ -85,8 +85,7 @@ Depuis Intellij, tu peux directement télécharger Java 17 : <br>
 <img src="img-readme/img11.png" width="600"/>
 </p>
 <br>
-Tu peux également changer de Shell (Surtout utile pour les Windows)
-<br>
+Tu peux également changer de Shell (Surtout utile pour les Windows)<br>
 <p align="center">
 <img src="img-readme/img12.png" width="500"/>
 </p>
@@ -106,8 +105,7 @@ Lance le Docker Desktop en cliquant sur l'icône, tu dois obtenir l'écran suiva
 Ferme et ré-ouvre ton application IntelliJ pour que les changements effectués par l'installation de docker soit pris en compte.<br>
 Pour s'assurer que ton install Docker a bien fonctionné lance la commande suivante dans ton terminal :  <br>
 `docker run hello-world` <br>
-Tu dois obtenir ce résultat :
-<br>
+Tu dois obtenir ce résultat : <br>
 <p align="center">
 <img src="img-readme/img15.png" width="600"/>
 </p>
@@ -131,8 +129,7 @@ Saisie les infos (1-3), puis test la connexion à la bdd (4)
 <p align="center">
 <img src="img-readme/img19.png" width="500"/>
 <img src="img-readme/img20.png"/>
-</p>
-<br> 
+</p><br> 
 Si c'est valide, clique sur *OK* (5)
 
 ### 3. Initialisation de la BDD
@@ -166,15 +163,13 @@ Ca ouvre :
 <p align="center">
 <img src="img-readme/img27.png" width="600"/>
 </p>
-Sélectionne le Java 17 préalablement téléchargé et ajoute l'option `-Xms256m -Xmx256m` (c'est pour éviter que Intellij mange toute ta RAM)
-<br>
+Sélectionne le Java 17 préalablement téléchargé et ajoute l'option `-Xms256m -Xmx256m` (c'est pour éviter que Intellij mange toute ta RAM)<br>
 <p align="center">
 <img src="img-readme/img28.png" width="600"/>
 <img src="img-readme/img29.png" />
 <img src="img-readme/img30.png" width="500"/>
 </p>
-Enfin :
-<br>
+Enfin :<br>
 <p align="center"><img src="img-readme/img31.png" width="800"/></p>
 
 Alors ça marche ?
