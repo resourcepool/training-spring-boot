@@ -3,13 +3,21 @@
 
 1. Importer le projet dans IntelliJ IDEA en important le fichier "pom.xml" à la racine de ce répertoire
 
-2. Exécuter votre DB mysql. Si vous avez docker, vous pouvez utiliser la commande suivante:
+
+2. Lance et init la bdd avant de run le projet<br>
+   (besoin du coup de pouce ?  [III. SetUp de la BDD via Docker](https://github.com/resourcepool/training-spring-boot/tree/readme-setup#iii-setup-de-la-bdd-via-docker))
+
 ```
-docker run --name mariadb --rm -e MYSQL_ROOT_PASSWORD=toor -e MYSQL_DATABASE=defaultdb -p 3306:3306 -v "`pwd`/initdb:/docker-entrypoint-initdb.d" mariadb
+docker run --name mariadb --rm -e MYSQL_ROOT_PASSWORD=toor -e MYSQL_DATABASE=defaultdb -p 3306:3306 mariadb
 ```
 
-3. Si vous n'avez pas Docker, et que vous avez un serveur MariaDB custom, vérifiez bien que vos utilisateurs / mdp sont les bons par rapport au fichier de configuration (src/main/resources/application.properties), et exécutez les scripts présents dans le dossier `initdb`
+3. Connecter la bdd à IntelliJ via l'onglet Database épinglé à droite.<br>
+   (besoin du coup de pouce ?  [III.2. Afficher la BDD dans Intellij](https://github.com/resourcepool/training-spring-boot/tree/readme-setup#2-afficher-la-bdd-dans-intellij))
 
-4. Tous les scripts sql contenus dans le dossier initdb seront exécutés automatiquement lors du premier chargement de la DB.
 
-5. Lancez l'application via IntelliJ, et vérifiez qu'elle fonctionne sur http://localhost:8080 (par défaut)
+4. Lancer les scripts sql contenus dans le dossier /initdb : Selectionner les fichiers .sql, clique droit puis 'Run'.<br>
+   (besoin du coup de pouce ?  [III.3. Initialisation de la BDD](https://github.com/resourcepool/training-spring-boot/tree/readme-setup#3-initialisation-de-la-bdd))
+
+
+5. Lancez l'application via IntelliJ, et vérifiez qu'elle fonctionne sur http://localhost:8080 (par défaut).<br>
+   (besoin du coup de pouce ?  [IV. Run du projet (c'est bientôt fini promis !)](https://github.com/resourcepool/training-spring-boot/tree/readme-setup#iv-run-du-projet-cest-bientôt-fini-promis-))
