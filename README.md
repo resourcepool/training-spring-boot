@@ -54,6 +54,7 @@ Pour récupérer le projet du répo GitHub lance `git clone https://github.com/r
 
 Dans Intellij, effectue ensuite les actions suivantes : 
 ![img.png](img-readme/img5.png)
+
 ![img_1.png](img-readme/img6.png)
 
 ### 5. Téléchargement de Java 17
