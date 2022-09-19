@@ -132,6 +132,7 @@ Saisie les infos (1-3), puis test la connexion à la bdd (4)
 <img src="img-readme/img19.png" width="500"/>
 <img src="img-readme/img20.png"/>
 </p><br> 
+
 Si c'est valide, clique sur *OK* (5)
 
 ### 3. Initialisation de la BDD
