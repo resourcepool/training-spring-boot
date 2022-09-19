@@ -94,7 +94,7 @@ Installe les drivers si besoin :
 
 Saisie les infos (1-3), test la connexion (4) 
 ![img_3.png](img-readme/img19.png)
-![img_4.png](img-readme/img20.png)
+![img_4.png](img-readme/img20.png) <br> 
 Si c'est valide, clique sur *OK* (5)
 
 ### 3. Initialisation de la BDD
@@ -107,6 +107,22 @@ Clic droit + run :
 Tadaaaam (j'avoue un peu plus que 2 clics)
 ![img_8.png](img-readme/img24.png)
 
-2. Suivre la procédure d'installation des environnements INSTALL_XXX.md
+## IV. Run du projet (c'est bientôt fini promis !)
+**Deux** façons de faire : 
+![img.png](img-readme/img25.png)
 
-3. Ouvrir le projet `webapp-hello-world` dans votre IDE (IntelliJ IDEA recommandé)
+**OU**
+![img_1.png](img-readme/img26.png)
+
+Ca ouvre : 
+![img_2.png](img-readme/img27.png)
+Sélectionne le Java 17 préalablement téléchargé et ajoute l'option `-Xms256m -Xmx256m` (c'est pour éviter que Intellij mange toute ta RAM)
+![img_3.png](img-readme/img28.png)
+![img_4.png](img-readme/img29.png)
+![img_5.png](img-readme/img30.png)
+
+Enfin : 
+![img_6.png](img-readme/img31.png)
+Alors ça marche ?
+
+
