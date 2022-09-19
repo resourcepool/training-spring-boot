@@ -38,7 +38,7 @@ Pour les puces Intel choisir *Intel Chip* & *(Intel)*
 Intellij est un IDE super complet et est devenu un indispensable pour le dévelopement de projet Java. <br> 
 
 Avec ses recherches de fichiers optimisées, auto-complétions et raccourcis à gogo, Intellij améliore grandement l'expérience de développement. 
-Le Graal étant que maven y est de base intégré et que tu peux
+Le Graal étant que, maven y est de base intégré et que tu puisses
 télécharger n'importe quelle version de Java directement depuis ton IDE (non ce n'est pas un rêve !)<br>
 
 Cerise sur le gateaux grâce à ton compte EPF, tu peux gratuitement obtenir une licence de la version payante (ultimate). <br>
