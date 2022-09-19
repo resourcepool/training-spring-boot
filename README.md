@@ -45,10 +45,10 @@ Cerise sur le gateaux grâce à ton compte EPF, tu peux gratuitement obtenir une
 Elle est essentielle au bon déroulement du TP car avec cette derniere tu pourras notamment visualiser ta base de donnée et intéragire avec elle directement depuis IntelliJ. <br>
 Pour te créer un compte, suis ce lien et effectue les actions détaillées ci-dessous : https://www.jetbrains.com/fr-fr/idea/
 
-<div style="text-align:center">
+<p align="center">
 <img src="img-readme/img.png" width="500"/>
 <img src="img-readme/img2.png" width="500"/>
-</div>
+</p>
 
 ### 2. Licence Intellij
 Pour récupérer une licence gratuite utilise ce lien : https://jetbrains.com/shop/eform/students
