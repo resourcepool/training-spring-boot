@@ -5,7 +5,7 @@ Vous êtes libre de développer le projet de votre choix dès l'instant où il a
 
 # Stack
   * Soit une application standalone avec Spring Boot et des templates Thymeleaf
-  * Soit, **si vous vous sentez à l'aise uniquement**, un backend Spring Boot qui expose votre API et un front SPA (Single Page Application) utilisant Angular
+  * Soit un backend Spring Boot qui expose votre API et un front SPA (Single Page Application) utilisant Angular
 
 # Guidelines
 Vous développerez votre projet en équipe de **3 personnes**.
@@ -16,6 +16,6 @@ Voici ce qui est attendu en livrable :
    * Un README.md à la racine de votre repository qui donne toutes les instructions pour lancer et faire tourner votre projet, ainsi qu'un screenshot de votre app
 
    
-Vous enverrez le lien du repo à vos encadrants `hcaupert@takima.fr` et `amoray@takima.fr`
+Vous enverrez le lien du repo à vos encadrants `rdesemlyen@takima.fr` et `llenet@takima.fr`
 
 
