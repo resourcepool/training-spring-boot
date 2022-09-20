@@ -1,4 +1,4 @@
-# Training Spring Boot
+# Set up cours Java Spring Boot
 
 ## I. Installation
 **2 méthodes d'installation sont possibles : par téléchargements Internet ou par Clé USB**
@@ -33,7 +33,7 @@ Pour les puces Intel choisis *Intel Chip* & *(Intel)*
 #### Par clé : 
 - Récupère les lignes de commandes dans le fichier du dossier Linux
 
-## II. SetUp Intellij 
+## II. Set up Intellij 
 ### 1. Création compte 
 Intellij est un IDE super complet et est devenu un indispensable pour le développement de projet Java. <br> 
 
@@ -97,7 +97,8 @@ Sélectionne *Git Bash*
 <img src="img-readme/img13.png" width="500"/>
 </p>
 
-## III. SetUp de la BDD via Docker
+## III. Set up
+de la BDD via Docker
 ### 1. Docker
 Lance le Docker Desktop en cliquant sur l'icône, tu dois obtenir l'écran suivant :
 <p align="center">
