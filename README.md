@@ -1,4 +1,4 @@
-# Training Spring Boot
+# Set up training Spring Boot
 
 ## I. Installation
 **2 méthodes d'installation sont possibles : par téléchargements Internet ou par Clé USB**
