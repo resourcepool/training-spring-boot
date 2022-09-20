@@ -33,7 +33,7 @@ Pour les puces Intel choisis *Intel Chip* & *(Intel)*
 #### Par clé : 
 - Récupère les lignes de commandes dans le fichier du dossier Linux
 
-## II. SetUp Intellij 
+## II. Set up Intellij 
 ### 1. Création compte 
 Intellij est un IDE super complet et est devenu un indispensable pour le développement de projet Java. <br> 
 
