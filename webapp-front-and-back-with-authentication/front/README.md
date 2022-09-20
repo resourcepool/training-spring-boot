@@ -2,26 +2,14 @@
 
 ## Processus d'installation (NodeJs, npm, Angular CLI):
 
-* Télécharger Node.js (npm est inclus avec)
+* Télécharger Node.js (npm est inclus avec) : https://nodejs.org/en/download/
 * Ouvrir un terminal et entrer la commande afin de télécharger le CLI Angular: `npm install -g @angular/cli`
 
-## Configurer le projet
+## Utliser un front Angular
 
-* Ouvrir un terminal et entrer `npm install`
-* Ouvrir votre console firebase et mettre à jour votre `environment.ts` et `environment.prod.ts` avec la configuration projet firebase.
-
-```javascript
-firebase: {
-    apiKey: "xxxxxxxx-xxxxxxxx",
-    authDomain: "xxxxxxxxxxxxxxxxxxxxxxxx",
-    databaseURL: "xxxxxxxxxxxxxxxxxxxxxxxx",
-    projectId: "xxxxxxxx",
-    storageBucket: "xxxxxxxx",
-    messagingSenderId: "xxxxxx",
-    appId: "xxxxx",
-    measurementId: "xxxxxxxxxxxxxxxx"
-  }
-```
+* Ouvrir le dossier *front* depuis Intellij
+* Taper `npm i` en ligne de commandes.
+  Cette commande permet d'installer toutes les dépendances précisées dans le fichier *package.json* et de générer le *package-lock.json*
 
 ## Démarrer le serveur
-* Pour démarrer le serveur, entrer la commande : `ng serve`
+* Pour construire l'application et démarrer le serveur, entrer la commande : `ng serve`
