@@ -97,7 +97,7 @@ Sélectionne *Git Bash*
 <img src="img-readme/img13.png" width="500"/>
 </p>
 
-## III. SetUp de la BDD via Docker
+## III. Set up de la BDD via Docker
 ### 1. Docker
 Lance le Docker Desktop en cliquant sur l'icône, tu dois obtenir l'écran suivant :
 <p align="center">
