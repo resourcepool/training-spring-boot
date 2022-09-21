@@ -1,42 +1,37 @@
-package io.takima.demo;
+package io.takima.demo.models;
+
 import javax.persistence.*;
 import java.util.Objects;
 
-@Entity(name = "users")
+@Entity
+@Table(name = "users")
 public class User {
-/*
-Toutes les classes marquées de "@Entity" correspondent à une table en BDD, la table "users" ici.
-
-Les champs marqués de "@Column" correspondent aux colonnes de ta table.
---> remplacé par "@Id" & "@GeneratedValue(strategy = GenerationType.IDENTITY)" pour le champ id de ta classe.
-
-/!\ Chaque classe entitée à besoin au minimum pour fonctionner de :
-     - un constructeur vide
-     - des getter et setter associé à ses champs
-/!\    (vous pouvez les générer automatiquement via IntelliJ, Clique droit n'importe où dans ta classe --> Generate)
- */
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @Column(name = "first_name")
     private String firstName;
-
     @Column(name = "last_name")
     private String lastName;
-
     @Column(name = "age")
     private Integer age;
 
-    public User() {}
+    public User() {
+    }
 
-    public void setId(Long id) {
+    public User(Long id, String firstName, String lastName, Integer age) {
         this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
     }
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -68,11 +63,21 @@ Les champs marqués de "@Column" correspondent aux colonnes de ta table.
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
-        return id.equals(user.id);
+        return Objects.equals(id, user.id) && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(age, user.age);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(id, firstName, lastName, age);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

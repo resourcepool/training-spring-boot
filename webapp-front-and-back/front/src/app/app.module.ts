@@ -1,18 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListUsersComponent } from './pages/list-users/list-users.component';
-import { AddUserComponent } from './pages/add-user/add-user.component';
-import { HttpClientModule} from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { AddUserComponent } from './add-user/add-user.component';
+import { ListUsersComponent } from './list-users/list-users.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListUsersComponent,
-    AddUserComponent
+    AddUserComponent,
+    ListUsersComponent
   ],
   imports: [
     BrowserModule,

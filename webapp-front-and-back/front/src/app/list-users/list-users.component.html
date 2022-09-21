@@ -1,0 +1,26 @@
+
+<!-- Tableau Angular -->
+<div class="container d-flex flex-column align-items-center justify-content-center">
+  <table class="table table-dark table-striped table-group-divider">
+    <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Age</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.age}}</td>
+      <td><a class="btn btn-danger" (click)="deleteUser(user.id)">Delete</a></td>
+    </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-primary" (click)="showMe()"> T'es ou ?</a>
+  <p *ngIf="estCeQuilEstLa">Je suis là !!</p>
+</div>
