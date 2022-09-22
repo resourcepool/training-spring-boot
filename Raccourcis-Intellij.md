@@ -30,3 +30,5 @@ C'est aussi ici que vous pouvez les modifier à votre sauce.
 + Reformater le code (clean tout tes espaces et indentation) : `Ctrl + Alt + L`
 
 + Supprime les imports pas utiliser : `Ctrl + Alt + O`
+
++ Commenter les lignes selectionnées : `Ctrl + /`
