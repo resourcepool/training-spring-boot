@@ -7,7 +7,7 @@
    (besoin du coup de pouce ?  [III. SetUp de la BDD via Docker](https://github.com/resourcepool/training-spring-boot/tree/readme-setup#iii-setup-de-la-bdd-via-docker))
 
 ```
-docker run --name mariadb --rm -e MYSQL_ROOT_PASSWORD=toor -e MYSQL_DATABASE=defaultdb -p 3306:3306 mariadb
+docker run --name mariadb --rm -e MYSQL_ROOT_PASSWORD=toor -e MYSQL_DATABASE=defaultdb -p 3306:3306 -v db-volume:/var/lib/mysql mariadb
 ```
 
 3. Connecte la bdd à IntelliJ via l'onglet Database épinglé à droite.<br>
