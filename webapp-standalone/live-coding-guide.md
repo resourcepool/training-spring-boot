@@ -61,12 +61,13 @@ Ce guide est fait pour l'enseignant
  * Jouer avec Swagger
 
 ### Simple JDBC
- * Ajouter le driver JDBC
- * Lancer le container
- * Ajouter un ID à l'Utilisateur
+ * Ajouter le driver JDBC PostgreSQL
+ * Lancer le container postgresql en créant le docker-compose.yml (`db`)
+ * Ajouter un ID à l'Utilisateur dans la classe User
  * Le connecter à IntelliJ
  * Remplacer l'ancien DAO par un DAO avec JDBC + mapping
  * Voir que cela marche
+ * Refactorer un peu pour que ce soit joli
  
 ### Hibernate 
  * Ajouter hibernate (mvn dependency + spring data JPA)
